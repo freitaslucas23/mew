@@ -1,0 +1,63 @@
+body {
+  background-color: #F4E1A1; /* Fundo amarelo claro */
+  color: #5B3924; /* Texto marrom */
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1900px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #F4E1A1; /* Amarelo brilhante */
+  color: #5B3924; /* Marrom escuro */
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.5em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #D98B19; /* Amarelo escuro */
+}
+
+#garden {
+  margin-top: 50px;
+  position: relative;
+  height: 400px;
+  background-color: #F4E1A1; /* Fundo de jardim */
+  overflow: hidden;
+}
+
+.sunflower {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  background: url('sunflower.png') no-repeat center center / contain;
+  animation: grow 1s ease-out forwards;
+}
+
+@keyframes grow {
+  from {
+      transform: scale(0);
+      opacity: 0;
+  }
+  to {
+      transform: scale(1);
+      opacity: 1;
+  }
+}
+footer {
+  font-size: xx-large;
+  font-family: 'Arial', sans-serif;
+  margin-bottom: 20px;
+}
